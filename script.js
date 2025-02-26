@@ -409,8 +409,8 @@ function prevQuestion() {
 
 function submitQuiz() {
   clearInterval(timer);
-  document.getElementById("quiz-container").classList.add("hidden");
-  document.getElementById("result").classList.remove("hidden");
+  document.getElementById("quiz-container").classList.add("d-none");
+  document.getElementById("result").classList.remove("d-none");
   document.getElementById("score").innerText = `${score} out of ${questions.length}`;
 }
 
